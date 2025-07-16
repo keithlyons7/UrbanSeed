@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './components/Home';
 import OurIdea from './components/OurIdea';
 import Projects from './components/Projects';
@@ -14,6 +15,7 @@ function App() {
     return (
         <ThemeProvider>
             <BrowserRouter>
+                <ScrollToTop />
                 <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
                     <Navbar />
                     <main className="flex-grow">
